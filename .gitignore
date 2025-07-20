@@ -1,0 +1,38 @@
+# 仮想環境（一番重要！）
+venv/
+.venv/
+env/
+.env/
+
+# Pythonのキャッシュファイル、バイトコードなど
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# エディタやIDEの一時ファイル、設定など
+.vscode/ # VS Codeのワークスペース設定。共有したい場合は適宜調整。
+.idea/   # PyCharmなどのJetBrains系IDEのプロジェクト設定
+.mypy_cache/ # mypyのキャッシュ
+*.sublime-project
+*.sublime-workspace
+
+# OSの生成する一時ファイル
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# ログファイル
+*.log
+
+# 環境変数など、セキュリティに関わる情報
+.env # 環境変数ファイル。APIキーなど機密情報を含む場合が多い。
+*.ini # 設定ファイルだが、機密情報を含む可能性があれば。
+*.json # 同上。特にクレデンシャルなど。
+
+# テスト結果やビルド成果物など
+htmlcov/
+.coverage
+.tox/
+dist/
+build/
+*.egg-info/
